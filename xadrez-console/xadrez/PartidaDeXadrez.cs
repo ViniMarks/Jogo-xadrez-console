@@ -66,11 +66,11 @@ namespace xadrez
                     Posicao posP;
                     if (p.Cor == Cor.Branca)
                     {
-                        posP = new Posicao(destino.Linha + 1, origem.Coluna);
+                        posP = new Posicao(destino.Linha + 1, destino.Coluna);
                     }
                     else
                     {
-                        posP = new Posicao(destino.Linha - 1, origem.Coluna);
+                        posP = new Posicao(destino.Linha - 1, destino.Coluna);
                     }
                     pecaCapturada = Tab.RetirarPeca(posP);
                     Capturadas.Add(pecaCapturada);
